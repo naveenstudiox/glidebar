@@ -53,11 +53,7 @@ This works anywhere inside Chrome — no need to click anything.
 ### **Option A — Install from Chrome Store (when published)**
 (Coming soon)
 
-### **Option B — Load locally (Developer Mode)**
-1. Download or clone the repository:
-   ```sh
-   git clone https://github.com/voltagevalkyrie/glidebar.git
-````
+
 
 2. Open Chrome → go to:
 
@@ -140,13 +136,3 @@ chrome.storage.local → Glidebar
 
 Drop a star on GitHub!
 Every star helps others discover it.
-
-```
-https://github.com/voltagevalkyrie/glidebar
-```
-
----
-
-```
-Made with ⚡ & passion by voltagevalkyrie
-```
