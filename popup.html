@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glidebar</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <div class="header">
+      <div class="header-top">
+        <div class="logo">⚡ Glidebar</div>
+        <button id="themeBtn" class="settings-btn" title="Toggle theme">🌙</button>
+      </div>
+
+      <div class="mode-switch">
+        <button id="modeLinks" class="mode-btn active">
+          <span>🔗 Links</span>
+        </button>
+        <button id="modeNotes" class="mode-btn">
+          <span>📝 Notes</span>
+        </button>
+      </div>
+
+      <div class="search-bar">
+        <input 
+          id="searchInput" 
+          type="text" 
+          class="search-input" 
+          placeholder="Search your collection..."
+        />
+      </div>
+    </div>
+
+    <!-- Quick Add Section -->
+    <div class="quick-add">
+      <input 
+        id="quickAddInput"
+        type="text"
+        class="quick-add-input"
+        placeholder="✨ Paste URL or quick note... (Enter to add)"
+      />
+    </div>
+
+    <!-- Content Area -->
+    <div id="contentArea" class="content"></div>
+  </div>
+
+  <!-- Note Editor Modal -->
+  <div class="modal" id="noteModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">✍️ Edit Note</h3>
+        <button id="closeModal" class="close-btn">×</button>
+      </div>
+
+      <input 
+        id="noteTitleInput" 
+        type="text"
+        class="note-title-input"
+        placeholder="Note title..."
+      />
+
+      <textarea 
+        id="noteEditor" 
+        class="note-editor"
+        placeholder="Write your thoughts..."
+      ></textarea>
+
+      <div style="margin-top: 16px; text-align: right;">
+        <button id="saveNoteBtn" class="btn btn-primary">💾 Save Note</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
